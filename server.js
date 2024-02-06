@@ -11,7 +11,7 @@ const adminRoute = require("./routes/admin-router");
 const cors = require("cors");
 // to get the json data in express app.
 const corsOptions = {
-  origin: "https://clientside-1hti.onrender.com/",
+  origin: "https://clientside-1hti.onrender.com",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
