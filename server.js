@@ -31,7 +31,7 @@ app.get("/api/getkey", (req, res) =>
 );
 app.use("/api/admin", adminRoute);
  
-const PORT = 8000||9000||5000||7854;
+const PORT = process.env.PORT;
 connectDb().then(() => {
   app.listen(PORT, () => {
     console.log(`server is running at port: ${PORT}`);
