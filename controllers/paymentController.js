@@ -65,7 +65,7 @@ const paymentVerification = async (req, res) => {
       razorpay_signature,
     });
 
-    res.redirect(`http://localhost:5173/about`);
+    res.redirect(`https://clientside-1hti.onrender.com/about`);
   } else {
     res.status(400).json({
       success: false,
@@ -105,7 +105,7 @@ const paymentVerification1 = async (req, res) => {
       razorpay_signature,
     });
 
-    res.redirect(`http://localhost:5173/service`);
+    res.redirect(`https://clientside-1hti.onrender.com/service`);
   } else {
     res.status(400).json({
       success: false,
