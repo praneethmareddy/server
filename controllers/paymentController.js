@@ -10,7 +10,7 @@ const checkout = async (req, res) => {
   });
   console.log(req.body);
   const options = {
-    amount: Number(req.body.customAmount * 10000),
+    amount: Number(req.body.customAmount * 100),
     currency: "INR",
   };
 
@@ -31,7 +31,7 @@ const checkout1 = async (req, res) => {
   const price1 = await Service.findOne({ _id: req.body.serviceId});
   console.log(price1);
   const options = {
-    amount: Number(price1.price),
+    amount: Number(price1.price *100),
     currency: "INR",
   };
 
